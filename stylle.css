@@ -1,0 +1,126 @@
+
+    body {
+        background: #2a1a0e ; 
+        color: #fff5e6;      /* cor do texto creme */
+        font-family: sans-serif;
+        }
+
+        .logo {
+            font-family: 'bebas neue', sans-serif;
+            letter-spacing: 3px;
+            font-size: 3rem;
+            color: #ff3e6c;  
+            font-weight: bold;
+            }
+
+            .logo span { color: var(--branco-creme); }
+
+            button:hover {
+                background: #ff3e6c;
+                transform: translateY(-3px);  
+            }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background: #2a1a0e;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+
+}
+
+.menu-grind {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minimax(270px, 1fr));
+    gap: 2rem;
+}
+   
+nav {
+    background: var(--marrom);
+}
+nav .logo {
+    color: var(--rosa);
+}
+.btn {
+    background: var(--rosa);
+    color: var(--branco-creme);
+}
+
+h1 {
+    font-family: var(--font-titulo);
+    font-size: 5rem;
+}
+p {
+    font-family: var(--font-texto);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco-creme);
+    font-size: .9rem;
+    text-transform: uppercase;
+    transition: color .2s; 
+}
+nav a:hover {
+    color: var(--rosa);
+}
+
+.hero {
+    min-height: 100vh;
+    padding-top: 5rem;
+    background: var(--marrom);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    color: var(--branco-creme);
+}
+.hero-text h1 {
+    font-family: 'bebas neue', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.hero-text p {
+    font-family: 'bebas neue', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.hero-text em {
+    color: var(--rosa);        
+
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+:root {
+    --font-titulo: 'Bebas Neue', sans-serif;
+    --font-texto: 'DM Sans', sans-serif;
+}
+:root {
+    --rosa: #ff3e6c;
+    --branco-creme: #fff5e6;
+    --marrom: #2a1a0e;
+}
